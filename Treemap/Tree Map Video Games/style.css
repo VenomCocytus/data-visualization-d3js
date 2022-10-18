@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+}
+
+body {
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+svg {
+    background-color: rgb(56,58,74);
+    /* border: solid 1px darkgreen; */
+    margin: 10px;
+}
+
+#legend {
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.legend-text {
+    font-size: 12px;
+}
+
+.game-title {
+    font-size: 10px;
+}
+
+.legend-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#canvas {
+    min-width: 1000px;
+    min-height: 600px;
+}
+
+#title, #description {
+    text-align: center;
+    padding: 10px;
+}
+
+#title {
+    font-weight: bold;
+}
+
+#tooltip {
+    position: absolute;
+    padding: .5rem;
+    text-align: center;
+    font: 'Roboto', sans-serif;
+    border-radius: .3rem;
+    border: solid 1px green;
+    opacity: 0;
+    background: #eaeaea;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .tile{
+    cursor: pointer;
+} */
+
+.tile:hover {
+    fill: darkred;
+}
+
+#leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signature {
+    font-size: 12px;
+    margin: 20px;
+}

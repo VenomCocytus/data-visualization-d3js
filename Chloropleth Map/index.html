@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize data with a Chloropleth map</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="title">
+        <strong><i>United States Educational Attainment</i></strong>
+    </h1>
+
+    <div id="main-wrapper">
+        <svg id="canvas">
+        </svg>
+
+        <div id="rightSide">
+
+            <svg id="legend">
+            </svg>
+
+            <div id="description"> <i>
+                Percentage of adults age 25 and older with a bachelor's degree or higher
+                (2010-2014). Source: <a href="https://www.ers.usda.gov/data-products/county-level-data-sets/download-data.aspx">USDA Economic Research Service</a></i>
+            </div>
+            <div id="signature">Made by <i>Venom Cocytus</i></div>
+
+        </div>
+    </div>
+
+</body>
+<script defer src="./script.js"></script>
+<script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

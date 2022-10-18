@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+}
+
+svg {
+    background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );
+}
+
+#canvas {
+    border: solid 1px cyan;
+    min-height: 600;
+    min-width: 1200px;
+    border-radius: 8px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;  
+}
+
+#title {
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 700;
+    fill: white
+}
+
+#description {
+    color: #5AA364;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tooltip {
+    border: solid 1px green;
+    position:absolute;
+    padding: .5rem;
+    text-align: center;
+    border-radius: .3rem;
+    font: 'Roboto', sans-serif;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    opacity: 0;
+    background: #333;
+    align-items: centerx;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cell:hover {
+    fill: darkgreen;
+}
+
+.legendCell {
+    stroke: white;
+}
+
+.legendText {
+    font-size: 15px;
+}
+
+#legend {
+    border: solid 1px cyan;
+    padding: 10px;
+    margin: 10px;
+}

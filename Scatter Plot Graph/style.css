@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#title{
+    font-size: 32px;
+    margin: 45px 10px 45px 10px;
+}
+
+#title-lead{
+    font-size: 16px;
+    text-align: center;
+    color: #5AA364;
+}
+
+svg{
+    background-color: #1a746f;
+    border-radius: 5px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border: 2px solid cyan;
+    padding: 10px;
+}
+
+.tooltip {
+    position: absolute;
+    padding: .5rem;
+    text-align: center;
+    font: 'Roboto', sans-serif;
+    border-radius: .3rem;
+    border: solid 1px green;
+    opacity: 0;
+    background: #eaeaea;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.dot:hover {
+    fill: aqua;
+}
+
+.tooltip::before {
+    color:gray;
+    width: max-content;
+    max-width: 100%;
+}
+
+.legend {
+    position: absolute;
+    font-size: 12px;
+    text-align: right;
+    top: 50%;
+    right: 25%;
+    padding: 20px;
+}
+
+.legend .text{
+    margin: 15px;
+    padding-right: 25px;
+    min-width: 200px;
+    position: relative;
+}
+
+.legend .box {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    top: 0;
+    right: 0;
+}
+
+.legend #noDop {
+    background-color: orange;
+}
+
+.legend #withDop {
+    background-color: red;
+}
+
+.info{
+    font-size: 12px;
+    color: #5AA364;
+}

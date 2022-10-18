@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    font-family: Roboto, sans-serif;
+}
+
+html{
+    height: 100%
+}
+
+body {
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+svg{
+    background-color: #DEF2F1;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bar{
+    background-color: #2B7A78;
+    border-color: #2B7A78;
+    fill: #2B7A78;
+}
+
+.bar:hover{
+    fill: #17252A;
+}
+
+g{
+    color: #17252A
+}
+
+.tooltip{
+    position: absolute;
+    padding: .5rem;
+    text-align: center;
+    font: Roboto, sans-serif;
+    border-radius: .3rem;
+    border: solid 1px green;
+    opacity: 0;
+    background: #eaeaea;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.tooltip::before {
+    color: #FEFFFF;
+    width: max-content;
+    max-width: 100%;
+}
+
+#title{
+    padding: 10px;
+    font-size: 32px;
+    fill: #5AA364;
+}
+
+.subtitle{
+    font-size: 20px;
+    text-align: center;
+    fill: #5AA364;
+}
+
+.info{
+    font-size: 12px;
+    color: #5AA364;
+}
